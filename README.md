@@ -5,7 +5,7 @@ I'm building this from scratch on Pop!_OS 20.10, but I'm using code from my Juli
 
 INSTALLATION
 
-Since I use gTTS as and operating system level utility.  You probably should too -- see my GoogSpeech Github repository. You must also, however, install gTTS in the virtual environment you create below.  Otherwise: import gtts (lower case here) in your python programs will fail.  
+Since I use gTTS as and operating system level utility.  You probably should too -- see my GoogSpeech Github repository. You must also, however, install gTTS in the virtual environment you create below.  Otherwise: import gtts (lower case once programming in python -- go figure) or your python programs will fail.  
 
 Install gTTS in the base environment:
 
@@ -111,6 +111,16 @@ unzip vosk-model-en-us-aspire-0.2.zip
 You will now have a vosk-model-en-us-aspire-0.2 directory.  
 Move it into your models directory:
 
-mv ~/downloads/vosk-model-en-us-aspire-0.2 ~/Code/Julie-Julie/models/
+mv ~/Downloads/vosk-model-en-us-aspire-0.2 ~/Code/Julie-Julie/model
+cd ~/Code/Julie-Julie/
+
+Now install pyaudio:
+
+conda install pyaudio    (use conda as pip usually fails. I'm not sure why.)
+
+Let's test our vosk installation:
+
+cp ~/Code/vosk-api/python/example/test_microphone.py .
+
 
 
