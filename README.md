@@ -127,4 +127,20 @@ Now install mpg123, and we are done with the foundations for TTS and STT.
 sudo apt install mpg123
 
 
+Start doing customization:
+
+Get the python you are using in your virtual environment:
+which python
+
+Here's what I get.  
+
+/home/bard/miniconda3/envs/Julie-Julie/bin/python
+
+Put this into the start_Julie-Julie.sh
+
+/home/bard/miniconda3/envs/Julie-Julie/bin/python /home/bard/Code/Julie-Julie
+
+Add additional packages for modules:
+pip install pyautogui --use-feature=2020-resolver
+pip install wikipedia --use-feature=2020-resolver
 
