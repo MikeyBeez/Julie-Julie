@@ -1,9 +1,10 @@
 #############################################################
 # STT SPEECH TO TEXT FUNCTION THAT RETURNS THE VARIABLE "command"
 import pyaudio
-from vosk import Model, KaldiRecognizer, SetLogLevel
+from vosk import Model, KaldiRecognizer
+#, SetLogLevel
 
-SetLogLevel(-10)
+#SetLogLevel(-10)
 
 
 def myCommand():
