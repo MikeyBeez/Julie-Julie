@@ -3,13 +3,23 @@ New Virtual Assistant with Elmo Model for Querying Downloaded Text.
 
 I'm building this from scratch on Pop!_OS 20.10, but I'm using code from my Juliet repository.  Ubuntu 20.10, 20.04, 18.* should also work fine -- as well as many other linuxes.apt list
 
+I use minconda for virtual environments.  You will need this for pyadio as pip can't install it.  Anaconda also works.  
+Here's the 64 bit Linux installer you need.  It will download automatically: 
+https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+Here's the link to miniconda documentation:
+https://docs.conda.io/en/latest/miniconda.html
+
+You don't need to know much about this to run the commands in my instructions, but you should understand that you are segregating python packages for this application by creating a virtual environment -- then activating it.  
+
 INSTALLATION
+
+There are a lot of tricky bits in here; so I don't recommend using pip install -r requirements.txt.  I include this file as a version record, however.  Check it agaist a pip list to find inconsistencies, if you are having trouble.  
 
 Since I use gTTS as and operating system level utility.  You probably should too -- see my GoogSpeech Github repository. You must also, however, install gTTS in the virtual environment you create below.  Otherwise: import gtts (lower case once programming in python -- go figure) or your python programs will fail.  
 
 Install gTTS in the base environment:
 
-pip install gTTS --use-feature=2020-resolver
+pip install gTTS=1.2.2 --use-feature=2020-resolver  (gTTS 2.0 sucks and causes latency problems.)
 
 There are changes to pip's wrapper so add the --use-feature=2020-resolver switch until pip's programmers make all their changes.
 
@@ -19,36 +29,9 @@ conda create --name Julie-Julie python=3.6.2
 conda activate Julie-Julie
 pip list
 
-Here's what I'm seeing:
-
-
-Package    Version
----------- -------------------
-certifi    2020.6.20
-pip        20.2.4
-setuptools 50.3.1.post20201107
-wheel      0.35.1
 
 pip install gTTS --use-feature=2020-resolver
 pip list
-
-OUTPUT:
-Package        Version
--------------- -------------------
-beautifulsoup4 4.9.3
-certifi        2020.6.20
-chardet        3.0.4
-click          7.1.2
-gTTS           2.1.2
-gTTS-token     1.1.4
-idna           2.10
-pip            20.2.4
-requests       2.25.0
-setuptools     50.3.1.post20201107
-six            1.15.0
-soupsieve      2.0.1
-urllib3        1.26.2
-wheel          0.35.1
 
 This should take care of the packages necessary for text to speech (TTS).
 
@@ -74,25 +57,6 @@ Always read the documentation when installing a package.  Things change, and the
 
 pip3 install vosk --use-feature=2020-resolver
 pip list
-
-OUTPUT:
-Package        Version
--------------- -------------------
-beautifulsoup4 4.9.3
-certifi        2020.6.20
-chardet        3.0.4
-click          7.1.2
-gTTS           2.1.2
-gTTS-token     1.1.4
-idna           2.10
-pip            20.2.4
-requests       2.25.0
-setuptools     50.3.1.post20201107
-six            1.15.0
-soupsieve      2.0.1
-urllib3        1.26.2
-vosk           0.3.15
-wheel          0.35.1
 
 Now get and install the kaldi model used by vosk.  You can find it at 
 https://alphacephei.com/vosk/models
@@ -125,7 +89,6 @@ cp ~/Code/vosk-api/python/example/test_microphone.py .
 Now install mpg123, and we are done with the foundations for TTS and STT.
 
 sudo apt install mpg123
-
 
 Start doing customization:
 
