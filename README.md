@@ -50,7 +50,7 @@ soupsieve      2.0.1
 urllib3        1.26.2
 wheel          0.35.1
 
-This should take care of the packagee necessary for text to speech (TTS).
+This should take care of the packages necessary for text to speech (TTS).
 
 Next is speech to text (STT):
 
