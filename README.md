@@ -136,7 +136,7 @@ Here's what I get.
 
 /home/bard/miniconda3/envs/Julie-Julie/bin/python
 
-Put this into the start_Julie-Julie.sh
+Put this into the startJulie-Julie.sh
 
 /home/bard/miniconda3/envs/Julie-Julie/bin/python /home/bard/Code/Julie-Julie
 
