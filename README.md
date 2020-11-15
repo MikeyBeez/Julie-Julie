@@ -1,9 +1,11 @@
 # Julie-Julie
 New Virtual Assistant with Elmo Model for Querying Downloaded Text.
 
-I'm building this from scratch on Pop!_OS 20.10, but I'm using code from my Juliet repository.  Ubuntu 20.10, 20.04, 18.* should also work fine -- as well as many other linuxes.apt list
+I'm building this from scratch on Pop!_OS 20.10, but I'm using code from my Juliet repository.  Ubuntu 20.10, 20.04, 18.* should also work fine -- as well as many other linuxes.
 
-I use minconda for virtual environments.  You will need this for pyadio as pip can't install it.  Anaconda also works.  
+apt list
+
+I use miniconda for virtual environments.  You will need this for pyadio as pip can't install it.  Anaconda also works.  
 Here's the 64 bit Linux installer you need.  It will download automatically: 
 https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 Here's the link to miniconda documentation:
@@ -13,13 +15,13 @@ You don't need to know much about this to run the commands in my instructions, b
 
 INSTALLATION
 
-There are a lot of tricky bits in here; so I don't recommend using pip install -r requirements.txt.  I include this file as a version record, however.  Check it agaist a pip list to find inconsistencies, if you are having trouble.  
+There are a lot of tricky bits in here; so I don't recommend using pip install -r requirements.txt.  I include this file as a version record, however.  Check it against a pip list to find inconsistencies, if you are having trouble.  
 
 Since I use gTTS as and operating system level utility.  You probably should too -- see my GoogSpeech Github repository. You must also, however, install gTTS in the virtual environment you create below.  Otherwise: import gtts (lower case once programming in python -- go figure) or your python programs will fail.  
 
 Install gTTS in the base environment:
 
-pip install gTTS=1.2.2 --use-feature=2020-resolver  (gTTS 2.0 sucks and causes latency problems.)
+sudo pip3 install gTTS==1.2.2 --use-feature=2020-resolver  (gTTS 2.0 sucks and causes latency problems.)
 
 There are changes to pip's wrapper so add the --use-feature=2020-resolver switch until pip's programmers make all their changes.
 
@@ -30,7 +32,7 @@ conda activate Julie-Julie
 pip list
 
 
-pip install gTTS --use-feature=2020-resolver
+sudo pip3 install gTTS==1.2.2 --use-feature=2020-resolver
 pip list
 
 This should take care of the packages necessary for text to speech (TTS).
