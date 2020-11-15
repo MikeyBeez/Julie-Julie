@@ -1,7 +1,7 @@
 # Julie-Julie
 New Virtual Assistant with Elmo Model for Querying Downloaded Text.
 
-I'm building this from scratch on Pop!_OS 20.10, but I'm using code from my Juliet repository.
+I'm building this from scratch on Pop!_OS 20.10, but I'm using code from my Juliet repository.  Ubuntu 20.10, 20.04, 18.* should also work fine -- as well as many other linuxes.apt list
 
 INSTALLATION
 
@@ -121,6 +121,10 @@ conda install pyaudio    (use conda as pip usually fails. I'm not sure why.)
 Let's test our vosk installation:
 
 cp ~/Code/vosk-api/python/example/test_microphone.py .
+
+Now install mpg123, and we are done with the foundations for TTS and STT.
+
+sudo apt install mpg123
 
 
 
