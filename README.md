@@ -109,3 +109,7 @@ Add additional packages for modules:
 pip install pyautogui --use-feature=2020-resolver
 pip install wikipedia --use-feature=2020-resolver
 
+
+
+
+Eventually, I'll be using this model:  https://www.youtube.com/watch?v=qJHDuYm8XGk&t=330s
