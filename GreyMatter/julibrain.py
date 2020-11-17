@@ -93,7 +93,7 @@ def assistant(command, playcounter, songs2play, runtest):
 
 # Next command. This will open youtube in your brower.
 # -------------------------------------------------------------
-    if 'open youtube' in command:
+    if 'open tube' in command:
         url = 'https://www.youtube.com/'
         if not runtest:
             webbrowser.open(url)
