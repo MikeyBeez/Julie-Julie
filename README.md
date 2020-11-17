@@ -31,6 +31,8 @@ conda create --name Julie-Julie python=3.6.2
 
 
 conda activate Julie-Julie
+
+
 pip list
 
 
