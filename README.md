@@ -87,8 +87,6 @@ conda install pyaudio    (use conda as pip usually fails. I'm not sure why.)
 
 Let's test our vosk installation:
 
-cp ~/Code/vosk-api/python/example/test_microphone.py .
-
 python ./test_microphone.py
 
 
