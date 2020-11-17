@@ -5,7 +5,7 @@ I'm building this from scratch on Pop!_OS 20.10, but I'm using code from my Juli
 
 apt list
 
-I use miniconda for virtual environments.  You will need this for pyadio as pip can't install it.  Anaconda also works.  
+I use miniconda for virtual environments.  You will need this for pyaudio as pip can't install it.  Anaconda also works.  
 Here's the 64 bit Linux installer you need.  It will download automatically: 
 https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 Here's the link to miniconda documentation:
