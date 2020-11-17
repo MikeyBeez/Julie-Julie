@@ -21,7 +21,9 @@ Since I use gTTS as and operating system level utility.  You probably should too
 
 Install gTTS in the base environment:
 
-sudo pip3 install gTTS==1.2.2 --use-feature=2020-resolver  (gTTS 2.0 sucks and causes latency problems.)
+sudo pip3 install gTTS==1.2.2 
+
+gTTS 2.0 sucks and causes latency problems.
 
 There are changes to pip's wrapper so add the --use-feature=2020-resolver switch until pip's programmers make all their changes.
 
