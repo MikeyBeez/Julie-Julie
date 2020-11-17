@@ -87,6 +87,9 @@ Let's test our vosk installation:
 
 cp ~/Code/vosk-api/python/example/test_microphone.py .
 
+python ./test_microphone.py
+
+
 Now install mpg123, and we are done with the foundations for TTS and STT.
 
 sudo apt install mpg123
