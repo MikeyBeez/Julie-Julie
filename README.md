@@ -1,6 +1,8 @@
 # Julie-Julie
 New Virtual Assistant with Elmo Model for Querying Downloaded Text.
 
+Wow!  I found a lot of errors.  This always happens when I test new documentation with a new build.  This is ongoing documentation.  If you have trouble.  Check back in a few days.  I may have fixed the instructuions by then.  As of 11-17-2020, this doc should work fine, but I will be making additions, as this repo is not done yet.  I update this as I work, but there are almost always errors.  I find them later when I put myself into reader mode and build this software using this documentation.  I'll post the date of each time I test the documentation.
+
 I'm building this from scratch on Pop!_OS 20.10, but I'm using code from my Juliet repository.  Ubuntu 20.10, 20.04, 18.* should also work fine -- as well as many other linuxes.
 
 apt list
@@ -98,7 +100,9 @@ Add additional packages for modules:
 pip install pyautogui --use-feature=2020-resolver
 pip install wikipedia --use-feature=2020-resolver
 
-More to be done here . . .
+More to be done here . . .  Checked to this point on 11/17/2020
+
+I'm going to clean up my code at this point.  I have a lot of code from other projects that I want to integrate in, but that code complicates the repo.  I'm going to move it into a research-storage-attic/ directory just to get it out of the way for now.  After I will start setting up and testing each action component.  For example, I need to put my music files into the correct path.   
 
 
 Eventually, I'll be using this model:  https://www.youtube.com/watch?v=qJHDuYm8XGk&t=330s
