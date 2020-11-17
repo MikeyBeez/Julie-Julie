@@ -63,7 +63,8 @@ git clone https://github.com/alphacep/vosk-api.git
 Documentation for vosk is on their website:  https://alphacephei.com/vosk/
 Always read the documentation when installing a package.  Things change, and they may have updated their proceedures whil I may not have updated mine.
 
-pip3 install vosk --use-feature=2020-resolver
+pip3 install vosk 
+
 pip list
 
 Now get and install the kaldi model used by vosk.  You can find it at 
