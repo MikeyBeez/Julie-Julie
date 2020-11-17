@@ -98,6 +98,20 @@ Add additional packages for modules:
 pip install pyautogui --use-feature=2020-resolver
 pip install wikipedia --use-feature=2020-resolver
 
+To setup your music I make a folder called music at ~/Music.  Here's a path to a song:  /home/bard/Music/Music/SoundGarden/Unknown\ Album/Black\ Hole\ Sun.mp3
+
+Music needs to be listed in the mymusiclist.txt file.
+If you want/have music in another location, you will need to modify the mymusiclist.txt file to point to it.   The command "Julie-Julie play music" will play 3 songs.  This can be changed in the julie-julie.py file.  See below:
+
+def main():
+    # Initialize.
+    myVars()
+    playcounter = 1
+    # This is where to set the number of songs
+    # to play when you say "Julie play music."
+    songs2play = 2
+
+
 More to be done here . . .  Checked to this point on 11/17/2020
 
 I'm going to clean up my code at this point.  I have a lot of code from other projects that I want to integrate in, but that code complicates the repo.  I'm going to move it into a research-storage-attic/ directory just to get it out of the way for now.  After I will start setting up and testing each action component.  For example, I need to put my music files into the correct path.   
