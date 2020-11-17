@@ -41,6 +41,7 @@ pip list
 
 
 sudo pip3 install gTTS==1.2.2 
+
 pip list
 
 This should take care of the packages necessary for text to speech (TTS).
