@@ -49,7 +49,9 @@ This should take care of the packages necessary for text to speech (TTS).
 Next is speech to text (STT):
 
 Install the alphacep's vosk-api software from github.
-The URL is https://github.com/alphacep/vosk-api
+The command is 
+git clone https://github.com/alphacep/vosk-api
+
 I always clone this package so I have the example files handy.  cd to where you store code.  I use ~/Code.  
 
 Mkdir ~/Code 
