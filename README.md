@@ -28,6 +28,8 @@ There are changes to pip's wrapper so add the --use-feature=2020-resolver switch
 Then create a virtual environment:  
 
 conda create --name Julie-Julie python=3.6.2
+
+
 conda activate Julie-Julie
 pip list
 
