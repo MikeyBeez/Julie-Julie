@@ -72,20 +72,12 @@ https://alphacephei.com/vosk/models
 Download the vosk-model-en-us-aspire-0.2
 This takes a long time.  It's a large model. On my system this goes into ~/downloads/
 
-cd ~/Code
-mkdir Julie-Julie
-cd Julie-Julie
-mkdir models
+cd ~/Downloads
+unzip vosk-model-en-us-aspire-0.2
+mv ~/Downloads/vosk-model-en-us-aspire-0.2 ~/Code/Julie-Julie/
 
-unzip the model and move it to the models directory:
-
-unzip vosk-model-en-us-aspire-0.2.zip
-
-You will now have a vosk-model-en-us-aspire-0.2 directory.  
-Move it into your models directory:
-
-mv ~/Downloads/vosk-model-en-us-aspire-0.2 ~/Code/Julie-Julie/model
-cd ~/Code/Julie-Julie/
+cd ~/Code/Julie-Julie
+mv vosk-model-en-us-aspire-0.2/ model/ 
 
 Now install pyaudio:
 
