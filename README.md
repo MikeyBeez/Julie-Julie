@@ -1,4 +1,4 @@
-# Julie-Julie
+# Julie-Julie README and LOG
 New Virtual Assistant with Elmo Model for Querying Downloaded Text.
 
 I'm not sure that Elmo is the best choice for question answer.  It's slow.  I'm trying to find something much faster.  I'm looking into BERT right now.  11-21-20  
