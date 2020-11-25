@@ -214,7 +214,7 @@ def assistant(command, playcounter, songs2play, runtest):
     elif 'music' in command:
         if playcounter == 1:
             talktome.talkToMe("Choosing random song . . . ")
-        with open('/home/bard/Code/Juliet/mymusiclist.txt') as f:
+        with open('/home/bard/Code/Julie-Julie/mymusiclist.txt') as f:
             if playcounter == 1:
                 print("Total songs to play " + str(songs2play) + ".")
             mymusic = f.read().splitlines()
