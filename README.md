@@ -25,11 +25,11 @@ Since I use gTTS as and operating system level utility.  You probably should too
 
 Install gTTS in the base environment:
 
-sudo pip3 install gTTS==1.2.2 
+I've been struggling a bit with gTTS.  I had thought that one needed to use an older version and sudo for the installation.  I've since changed my mind.  I can't tell you why I was having trouble with gTTS, but it's no longer the case.  I also read that one should never use sudo with pip, as you can over-write operating system packages.  Is this true?  I want to err on the side of safety.
 
-gTTS 2.0 sucks and causes latency problems.
+pip3 install gTTS 
 
-There are changes to pip's wrapper so add the --use-feature=2020-resolver switch until pip's programmers make all their changes.
+There are changes to pip's wrapper so add the --use-feature=2020-resolver switch until pip's programmers make all their changes -- at least that's what the pip wrapper currently spits out occcassionally when installing packages.
 
 Then create a virtual environment:  
 
@@ -42,7 +42,7 @@ conda activate Julie-Julie
 pip list
 
 
-sudo pip3 install gTTS==1.2.2 
+pip3 install gTTS 
 
 pip list
 
@@ -93,7 +93,6 @@ conda install pyaudio    (use conda as pip usually fails. I'm not sure why.)
 Let's test our vosk installation:
 
 python ./test_microphone.py
-
 
 Now install mpg123, and we are done with the foundations for TTS and STT.
 
