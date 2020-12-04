@@ -76,15 +76,20 @@ pip list
 
 Now get and install the kaldi model used by vosk.  You can find it at 
 https://alphacephei.com/vosk/models
-Download the vosk-model-en-us-aspire-0.2
+Download the vosk-model-en-us-aspire-0.2 (this model is no longer working)
+Download this instead and keep a copy somewhere off your system:  
+https://alphacephei.com/vosk/models/vosk-model-en-us-daanzu-20200905.zip
 This takes a long time.  It's a large model. On my system this goes into ~/downloads/
 
 cd ~/Downloads
-unzip vosk-model-en-us-aspire-0.2
-mv ~/Downloads/vosk-model-en-us-aspire-0.2 ~/Code/Julie-Julie/
+unzip vosk-model-en-us-daanzu-20200905.zip
+
+mv ~/Downloads/vosk-model-en-us-daanzu-20200905
+ ~/Code/Julie-Julie/
 
 cd ~/Code/Julie-Julie
-mv vosk-model-en-us-aspire-0.2/ model/ 
+mv vosk-model-en-us-daanzu-20200905
+ model/ 
 
 Now install pyaudio:
 
