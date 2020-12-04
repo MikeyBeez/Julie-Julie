@@ -2,6 +2,7 @@
 
 !!!CRITICAL!!!
 As of Dec 4 2020 the Vosk Aspire model no longer works.  Use the 1 GB Danzu model instead.
+This model works with vosk==0.3.10
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 New Virtual Assistant with Elmo Model for Querying Downloaded Text.
@@ -75,7 +76,7 @@ git clone https://github.com/alphacep/vosk-api.git
 Documentation for vosk is on their website:  https://alphacephei.com/vosk/
 Always read the documentation when installing a package.  Things change, and they may have updated their proceedures whil I may not have updated mine.
 
-pip3 install vosk 
+pip3 install vosk==0.3.10 
 
 pip list
 
