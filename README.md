@@ -1,6 +1,8 @@
 # Julie-Julie README and LOG
 
-!!!CRITICAL!!!
+Dec 5, 2020 I made the mistake of saving a tar file of the model.  The mdel changed along with the software, so I had the wrong version of the model.  Aspire works fine.
+
+
 As of Dec 4 2020 the Vosk Aspire model no longer works.  Use the 1 GB Danzu model instead.
 This model works with vosk==0.3.10
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -82,18 +84,31 @@ pip list
 
 Now get and install the kaldi model used by vosk.  You can find it at 
 https://alphacephei.com/vosk/models
-Download the vosk-model-en-us-aspire-0.2 (this model is no longer working)
-Download this instead and keep a copy somewhere off your system:  
+Download the vosk-model-en-us-aspire-0.2 
+or Download this instead:  
 https://alphacephei.com/vosk/models/vosk-model-en-us-daanzu-20200905.zip
 This takes a long time.  It's a large model. On my system this goes into ~/downloads/
 
 cd ~/Downloads
+uzip vosk-model-en-us-aspire-0.2
+or
 unzip vosk-model-en-us-daanzu-20200905.zip
+
+mv ~/Downloads/vosk-model-en-us-aspire-0.2
+ ~/Code/Julie-Julie/
+
+or
 
 mv ~/Downloads/vosk-model-en-us-daanzu-20200905
  ~/Code/Julie-Julie/
 
 cd ~/Code/Julie-Julie
+
+mv vosk-model-en-us-aspire-0.2
+  model/
+
+or 
+
 mv vosk-model-en-us-daanzu-20200905
  model/ 
 
