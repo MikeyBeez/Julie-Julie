@@ -1,6 +1,8 @@
 # Julie-Julie README and LOG
 
 Dec 20, 2020.  I realized that My installation instructions are incomplete.  I haven't included cloning the repository, and although people should know how to de this, I feel I should give instructions for completeness' sake.  I've added them below.
+
+
 Dec 5, 2020 I made the mistake of saving a tar file of the model.  The mdel changed along with the software, so I had the wrong version of the model.  Aspire works fine.
 
 
