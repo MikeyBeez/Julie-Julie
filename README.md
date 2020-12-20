@@ -28,7 +28,7 @@ https://docs.conda.io/en/latest/miniconda.html
 
 You don't need to know much about this to run the commands in my instructions, but you should understand that you are segregating python packages for this application by creating a virtual environment -- then activating it.  
 
-INSTALLATIONo
+INSTALLATION:
 
 First fork the repository.  There is a button on the top right of the github page to do this.  Once that's done, the ownership should change to your github account name on the top left.  Then press the code button.  Choose https if you haven't already set up ssh.  Choose ssh if you have set it up.  Or setup ssh (recommended.)  Press the clipboard to copy the url to your clipboard.  Now open a terminal and run git clone <paste your clipboard here>  That's usually ctrl shift v.
 
