@@ -1,5 +1,6 @@
 # Julie-Julie README and LOG
 
+Dec 20, 2020.  I realized that My installation instructions are incomplete.  I haven't included cloning the repository, and although people should know how to de this, I feel I should give instructions for completeness' sake.  I've added them below.
 Dec 5, 2020 I made the mistake of saving a tar file of the model.  The mdel changed along with the software, so I had the wrong version of the model.  Aspire works fine.
 
 
@@ -25,7 +26,9 @@ https://docs.conda.io/en/latest/miniconda.html
 
 You don't need to know much about this to run the commands in my instructions, but you should understand that you are segregating python packages for this application by creating a virtual environment -- then activating it.  
 
-INSTALLATION
+INSTALLATIONo
+
+First fork the repository.  There is a button on the top right of the github page to do this.  Once that's done, the ownership should change to your github account name on the top left.  Then press the code button.  Choose https if you haven't already set up ssh.  Choose ssh if you have set it up.  Or setup ssh (recommended.)  Press the clipboard to copy the url to your clipboard.  Now open a terminal and run git clone <paste your clipboard here>  That's usually ctrl shift v.
 
 There are a lot of tricky bits in here; so I don't recommend using pip install -r requirements.txt.  I include this file as a version record, however.  Check it against a pip list to find inconsistencies, if you are having trouble.  
 
