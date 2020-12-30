@@ -75,25 +75,23 @@ def assistant(command, playcounter, songs2play, runtest):
     Check if command exists and execute corresponding action.
     '''
 # Big If Statement for Executing Commands
-
+#
+# Here is my chatbot implementation:
 # -------------------------------------------------------------
     if 'chat' in command:
         listening = True
         if not runtest:
-            runme = True
-            while runme == True:
+            runMe = True
+            while runMe == True:
                 if listening == True:
                     output = mychat.myChat()[3:]
                     print("output: ", output)
                     if 'goodbye' in output:
+                        runMe = False
                         talktome.talkToMe('Bye. We can chat more later.')
-                        runme = False
-                #if output == "":
-                #    pass
-                #else:
                 listening = False
-                cmd = "echo 'do you like fishing' | nc 127.0.0.1 9988"
-                os.system(cmd)
+                #cmd = "echo output | nc 127.0.0.1 9988"
+                os.system('echo ' + output + '| nc 127.0.0.1 9988')
                 sleep(2)
                 listening = True
         if runtest:
