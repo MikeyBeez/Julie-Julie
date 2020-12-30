@@ -19,6 +19,7 @@
 # Import my own modules in sub directories.
 from SpeakAndHear import talktome
 from SpeakAndHear import mycommand
+from SpeakAndHear import mychat
 from GreyMatter import julibrain
 # Import my own modules in this directory.
 import initualizejuliet as ij
@@ -75,7 +76,7 @@ def main():
     talktome.talkToMe("I am Julie Julie. How can I help?")
     print("How can I help?")
     # functions.
-    talktome.talkToMe("To get started, You can say Julie Julie help.")
+    #talktome.talkToMe("To get started, You can say Julie Julie help.")
     print("To get started, You can say 'Julie Julie help.'")
     # Also feel free to write some code to supress messages
     #  after the first use.  Eventuall, I will add a

@@ -34,6 +34,7 @@
 ##############################################################
 
 # import pyaudio
+from SpeakAndHear import mychat
 import pyautogui
 import subprocess
 import os
@@ -78,11 +79,15 @@ def assistant(command, playcounter, songs2play, runtest):
 # -------------------------------------------------------------
     if 'chat' in command:
         if not runtest:
-            cmd = "echo 'do you like fishing' | nc 127.0.0.1 9988"
-            os.system(cmd)
-            print('Done!')
+            runme = True
+            while runme == True:
+                output = mychat.myChat()[3:]
+                if 'goodbye' in output:
+                    runme = False
+                cmd = "echo output | nc 127.0.0.1 9988"
+                os.system(cmd)
         if runtest:
-            return url
+            return "pass"
 # -------------------------------------------------------------
 # Open Stuff
     # print("test = " + str(test) +".")
