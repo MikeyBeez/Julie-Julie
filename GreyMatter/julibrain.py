@@ -91,7 +91,7 @@ def assistant(command, playcounter, songs2play, runtest):
                         talktome.talkToMe('Bye. We can chat more later.')
                 listening = False
                 #cmd = "echo output | nc 127.0.0.1 9988"
-                os.system('echo ' + output + '| nc 127.0.0.1 9988')
+                os.system('echo ' + output + ' | nc 127.0.0.1 9988')
                 sleep(2)
                 listening = True
         if runtest:
