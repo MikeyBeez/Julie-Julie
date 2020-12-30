@@ -36,7 +36,7 @@
 # import pyaudio
 import pyautogui
 import subprocess
-# import os
+import os
 import webbrowser
 # from time import localtime, strftime, sleep
 from time import sleep
@@ -75,10 +75,19 @@ def assistant(command, playcounter, songs2play, runtest):
     '''
 # Big If Statement for Executing Commands
 
+# -------------------------------------------------------------
+    if 'chat' in command:
+        if not runtest:
+            cmd = "echo 'do you like fishing' | nc 127.0.0.1 9988"
+            os.system(cmd)
+            print('Done!')
+        if runtest:
+            return url
+# -------------------------------------------------------------
 # Open Stuff
     # print("test = " + str(test) +".")
 
-# First command. This will open reddit in your browser.
+# This will open reddit in your browser.
 # -------------------------------------------------------------
     if 'open reddit' in command:
         url = 'https://www.reddit.com/'
