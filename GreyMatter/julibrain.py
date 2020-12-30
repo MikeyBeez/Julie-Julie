@@ -78,18 +78,24 @@ def assistant(command, playcounter, songs2play, runtest):
 
 # -------------------------------------------------------------
     if 'chat' in command:
+        listening = True
         if not runtest:
             runme = True
             while runme == True:
-                output = mychat.myChat()[3:]
-                if 'goodbye' in output:
-                    talktome.talkToMe('Bye. We can chat more later.')
-                    runme = False
-                if output = "":
-                    pass
-                else:
-                    cmd = "echo output | nc 127.0.0.1 9988"
-                    os.system(cmd)
+                if listening == True:
+                    output = mychat.myChat()[3:]
+                    print("output: ", output)
+                    if 'goodbye' in output:
+                        talktome.talkToMe('Bye. We can chat more later.')
+                        runme = False
+                #if output == "":
+                #    pass
+                #else:
+                listening = False
+                cmd = "echo 'do you like fishing' | nc 127.0.0.1 9988"
+                os.system(cmd)
+                sleep(2)
+                listening = True
         if runtest:
             return "pass"
 # -------------------------------------------------------------
