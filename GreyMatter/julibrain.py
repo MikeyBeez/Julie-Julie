@@ -112,7 +112,7 @@ def assistant(command, playcounter, songs2play, runtest):
                         talktome.talkToMe('Bye. We can chat more later.')
                 listening = False
                 netcat(host, port, output)
-                sleep(4)
+                sleep(3)
                 listening = True
         if runtest:
             return "pass"
