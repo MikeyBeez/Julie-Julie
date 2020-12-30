@@ -46,13 +46,31 @@ import re
 import wikipedia
 from random import randrange
 # import psutil
-# import sys  (Possibly delete this line.)
 from SpeakAndHear import talktome
 # from GreyMatter import julibrain  (Possibly delete this line.)
+import sys
+import socket
 #############################################################
 # end import statements
 ##############################################################
 
+hostname = "localhost"
+port = 9988
+
+def netcat(hn, p, content):
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    s.connect((hn, int(p)))
+    s.sendall(content.encode())
+    sleep(0.5)
+    s.shutdown(socket.SHUT_WR)
+    #while 1:
+    #    data = s.recv(4096)
+    #    if not data:
+    #        break
+    #    print(repr(data))
+    #print("Connection closed.")
+    s.close()
+   
 #############################################################
 # This is Juliet's brain.
 # All her commands and logic are called here.
@@ -79,6 +97,9 @@ def assistant(command, playcounter, songs2play, runtest):
 # Here is my chatbot implementation:
 # -------------------------------------------------------------
     if 'chat' in command:
+        talktome.talkToMe("Hello.")
+        host = "localhost"
+        port = "9988"
         listening = True
         if not runtest:
             runMe = True
@@ -90,8 +111,7 @@ def assistant(command, playcounter, songs2play, runtest):
                         runMe = False
                         talktome.talkToMe('Bye. We can chat more later.')
                 listening = False
-                #cmd = "echo output | nc 127.0.0.1 9988"
-                os.system('echo ' + output + ' | nc 127.0.0.1 9988')
+                netcat(host, port, output)
                 sleep(2)
                 listening = True
         if runtest:
