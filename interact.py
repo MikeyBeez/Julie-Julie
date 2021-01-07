@@ -1,3 +1,6 @@
+#This file is included in this repo as an example of what needs to be done
+# to communicate with Julie Julie.  It's from https://github.com/MikeyBeez/transfer-learning-conv-ai
+
 # # Copyright (c) 2019-present, HuggingFace Inc.
 # All rights reserved.
 # This source code is licensed under the BSD-style license found in the
