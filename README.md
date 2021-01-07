@@ -1,5 +1,6 @@
 # Julie-Julie README and LOG
 
+Jan 7, 2021:  I added some code to Juliebrain, including a function definition called netcat.  This code is used for a socket connection.  There is also a new chat action that communicates with Huggingface's transfer-learning-conv-ai.  Of course the code for transfer-learning-conv-ai needed to be changed to accept the socket connection.  I'm including the modified file in this repo.  The file is called interact.py.  I'm commenting all the changes.  
 Dec 20, 2020.  I realized that My installation instructions are incomplete.  I haven't included cloning the repository, and although people should know how to de this, I feel I should give instructions for completeness' sake.  I've added them below.
 
 
