@@ -1,0 +1,7 @@
+commands:
+    #Time commands
+    - command
+input:  [What time is it]
+entity:  time
+action: getTime
+
