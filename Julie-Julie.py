@@ -21,6 +21,7 @@ from SpeakAndHear import talktome
 from SpeakAndHear import mycommand
 from SpeakAndHear import mychat
 from GreyMatter import julibrain
+#from GreyMatter import SystemInfo
 # Import my own modules in this directory.
 import initualizejuliet as ij
 

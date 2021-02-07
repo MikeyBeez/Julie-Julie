@@ -38,6 +38,7 @@ from SpeakAndHear import mychat
 import pyautogui
 import subprocess
 import os
+import datetime
 import webbrowser
 # from time import localtime, strftime, sleep
 from time import sleep
@@ -50,6 +51,7 @@ from SpeakAndHear import talktome
 # from GreyMatter import julibrain  (Possibly delete this line.)
 import sys
 import socket
+#from Greymatter import SystemInfo
 #############################################################
 # end import statements
 ##############################################################
@@ -116,6 +118,12 @@ def assistant(command, playcounter, songs2play, runtest):
                 listening = True
         if runtest:
             return "pass"
+# -------------------------------------------------------------
+# SystemInfo
+#    if 'time' in command:
+#        TheTime == SystemInfo.get_time()
+#        print(TheTime)
+#        talktome.talkToMe(TheTime)
 # -------------------------------------------------------------
 # Open Stuff
     # print("test = " + str(test) +".")
@@ -293,6 +301,21 @@ def assistant(command, playcounter, songs2play, runtest):
 # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 # End Query Stuff
+
+# -------------------------------------------------------------
+
+# SystemInfo
+# -------------------------------------------------------------
+# A class to return system info.
+    elif 'time' in command:
+        now = datetime.datetime.now()
+        timeanswer = 'The time is {} {}'.format(now.hour%12, now.minute)
+        print(timeanswer)
+        talktome.talkToMe(timeanswer)
+
+# -------------------------------------------------------------
+# ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 
 # Polite Stuff
 # Next command responds to Hi or Hello.
