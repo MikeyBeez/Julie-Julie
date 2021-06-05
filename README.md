@@ -1,5 +1,7 @@
 # Julie-Julie README and LOG
 
+Feb 12, 2021:  It's been a while since I've made changes here.  That's because I've been searching for the right model to use.  I've been studying Facebook's Parlai pipeline for language tasks. So far the Wizard of Wikipedia seems the most helpful, but I think I want something that will download text and analyze it.   For now, there are no new changes.
+
 Jan 7, 2021:  I added some code to Juliebrain, including a function definition called netcat.  This code is used for a socket connection.  There is also a new chat action that communicates with Huggingface's transfer-learning-conv-ai.  Of course the code for transfer-learning-conv-ai needed to be changed to accept the socket connection.  I'm including the modified file in this repo.  The file is called interact.py.  I'm commenting all the changes.  
 Dec 20, 2020.  I realized that My installation instructions are incomplete.  I haven't included cloning the repository, and although people should know how to de this, I feel I should give instructions for completeness' sake.  I've added them below.
 
