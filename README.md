@@ -1,23 +1,6 @@
-# Julie-Julie README and LOG
+# Julie-Julie README 
 
-Feb 12, 2021:  It's been a while since I've made changes here.  That's because I've been searching for the right model to use.  I've been studying Facebook's Parlai pipeline for language tasks. So far the Wizard of Wikipedia seems the most helpful, but I think I want something that will download text and analyze it.   For now, there are no new changes.
-
-Jan 7, 2021:  I added some code to Juliebrain, including a function definition called netcat.  This code is used for a socket connection.  There is also a new chat action that communicates with Huggingface's transfer-learning-conv-ai.  Of course the code for transfer-learning-conv-ai needed to be changed to accept the socket connection.  I'm including the modified file in this repo.  The file is called interact.py.  I'm commenting all the changes.  
-Dec 20, 2020.  I realized that My installation instructions are incomplete.  I haven't included cloning the repository, and although people should know how to de this, I feel I should give instructions for completeness' sake.  I've added them below.
-
-
-Dec 5, 2020 I made the mistake of saving a tar file of the model.  The mdel changed along with the software, so I had the wrong version of the model.  Aspire works fine.
-
-
-As of Dec 4 2020 the Vosk Aspire model no longer works.  Use the 1 GB Danzu model instead.
-This model works with vosk==0.3.10
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-New Virtual Assistant with Elmo Model for Querying Downloaded Text.
-
-I'm not sure that Elmo is the best choice for question answer.  It's slow.  I'm trying to find something much faster.  I'm looking into BERT right now.  11-21-20  
-
-Wow!  I found a lot of errors.  This always happens when I test new documentation with a new build.  This is ongoing documentation.  If you have trouble.  Check back in a few days.  I may have fixed the instructuions by then.  As of 11-17-2020, this doc should work fine, but I will be making additions, as this repo is not done yet.  I update this as I work, but there are almost always errors.  I find them later when I put myself into reader mode and build this software using this documentation.  I'll post the date of each time I test the documentation.
+New Virtual Assistant with Distilbert Model for Querying Downloaded Text.
 
 I'm building this from scratch on Pop!_OS 20.10, but I'm using code from my Juliet repository.  Ubuntu 20.10, 20.04, 18.* should also work fine -- as well as many other linuxes.
 
