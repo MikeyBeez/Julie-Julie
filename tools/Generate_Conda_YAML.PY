@@ -3,6 +3,8 @@
 # Copyright (c) Microsoft Corporation. All rights reserved.
 # Licensed under the MIT License.
 
+# Modify this for Julie-Julie
+
 # This script creates yaml files to build conda environments
 # For generating a conda file for running only python code:
 # $ python generate_conda_file.py
