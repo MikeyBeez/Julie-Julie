@@ -5,56 +5,50 @@
 
 '''
 
-# Import all the required modules.
-# Pyaudio is for the microphone and may be required by mpg123.
-# Pyautogui is for moving the mouse around
-#  robotically and automating key presses.
-# Subprocess is for running operating system commands and programs.
-# Os is for access operating system calls.  For example, it is
-# used to get the current working directory.
-# Webrowser is used to open and control whatever your default webbrowser is.
-# The time module give us access to time related functionality.
-# Re is python3's regular expression module.
-# Requests is used for making get requests to http servers.
-# Wikipedia is python3's module to access Wikipedia's API.
-# Random access's random generator functionality.
-# Psutils adds process utilities -- access information about
-# processes running on the system.
-# Sys adds access to system commands. I don't seem to be using this
-# module.  (Possibly remove.)
-# SpeakAndHear is a local module.  You'll find this is the
-# SpeakAndHear subdirectory.
-# SkeakAndHear has modules for speech to text and text to speech.
-# GreyMatter is the program's brain.  It contains a
-# large if statement that contains
-# all the keywords and subsequent actions. I shouldn't need to load
-# this, as I'm in this file already.
-# (Possibly delete "import GreyMatter.")
+"""
+Import all the required modules. Pyaudio is for the microphone and may be
+required by mpg123. Pyautogui is for moving the mouse around robotically
+and automating key presses. Subprocess is for running operating system
+commands and programs. Os is for access operating system calls.  For
+example, it is used to get the current working directory. Webrowser is used
+to open and control whatever your default webbrowser is. The time module
+give us access to time related functionality. Re is python3's regular
+expression module. Requests is used for making get requests to http
+servers. Wikipedia is python3's module to access Wikipedia's API. Random
+access's random generator functionality. Psutils adds process utilities --
+access information about processes running on the system. Sys adds access
+to system commands. I don't seem to be using this module. (Possibly
+remove.) SpeakAndHear is a local module. You'll find this is the
+SpeakAndHear subdirectory. SkeakAndHear has modules for speech to text and
+text to speech. GreyMatter is the program's brain. It contains a large if
+statement that contains all the keywords and subsequent actions. I
+shouldn't need to load this, as I'm in this file already. (Possibly delete
+"import GreyMatter.")
+"""
 
 ##############################################################
 
-# import pyaudio
-from SpeakAndHear import mychat
-import pyautogui
-import subprocess
-import os
+# Imports the necessary packages.
 import datetime
-import webbrowser
-# from time import localtime, strftime, sleep
-from time import sleep
+import os
+# import psutil
+# import pyaudio
+import pyautogui
 import re
 # import requests
-import wikipedia
-from random import randrange
-# import psutil
-from SpeakAndHear import talktome
-# from GreyMatter import julibrain  (Possibly delete this line.)
-import sys
 import socket
-#from Greymatter import SystemInfo
-#############################################################
-# end import statements
-##############################################################
+import subprocess
+import sys
+import webbrowser
+import wikipedia
+
+# from GreyMatter import julibrain  (Possibly delete this line.)
+# from Greymatter import SystemInfo
+from random import randrange
+from SpeakAndHear import mychat
+from SpeakAndHear import talktome
+# from time import localtime, strftime, sleep
+from time import sleep
 
 hostname = "localhost"
 port = 9988
