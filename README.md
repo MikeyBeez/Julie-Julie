@@ -1,6 +1,6 @@
 # Julie-Julie README 
 
-Old-school Virtual Assistant with Distilbert Model for Querying Downloaded Text.
+Old-School Virtual Assistant with Distilbert Model for Querying Downloaded Text.
 
 I'm building this from scratch on Pop!_OS 20.10, but I'm using code from my Juliet repository.  Ubuntu 20.10, 20.04, 18.* should also work fine -- as well as many other linuxes.
 
